@@ -5,3 +5,12 @@
 # список: ["йцу", "фыв", "ячс", "цук", "йцукен"], ищем: "йцу", ответ: -1
 # список: ["123", "234", 123, "567"], ищем: "123", ответ: -1
 # список: [], ищем: "123", ответ: -1
+
+str = ["qwe", "asd", "zxc", "qwe", "ertqwe"]
+a = 'qwe'
+list1 = list(enumerate(str))
+list2 = list(filter(lambda x: a in x, list1 ))
+if len(list2) > 1:
+    print(f'Second position {a} is {list2[1][0]}')
+else:
+    print(f'Second position {a} is -1')
